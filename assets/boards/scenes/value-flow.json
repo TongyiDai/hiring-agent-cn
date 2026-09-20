@@ -1,0 +1,20 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {"core_message": "系统把候选人材料转成可追溯证据，决定权始终留给人", "composition": "input-process-output", "focus_node": "evidence"},
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "resume", "type": "plane", "label": "候选人材料", "importance": 2},
+    {"id": "job", "type": "plane", "label": "确认后的岗位", "importance": 2},
+    {"id": "gate", "type": "frame", "label": "安全与隐私闸门", "importance": 4},
+    {"id": "evidence", "type": "circle", "label": "证据矩阵", "importance": 5},
+    {"id": "questions", "type": "plane", "label": "核验问题", "importance": 2},
+    {"id": "human", "type": "point", "label": "人工决定", "importance": 4}
+  ],
+  "edges": [
+    {"from": "resume", "to": "gate", "relation": "净化"},
+    {"from": "job", "to": "gate", "relation": "确认"},
+    {"from": "gate", "to": "evidence", "relation": "引用"},
+    {"from": "evidence", "to": "questions", "relation": "生成"},
+    {"from": "questions", "to": "human", "relation": "复核"}
+  ]
+}

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">证据充分度和岗位重要性二维矩阵</title><desc id="desc">岗位重要性纵轴与证据充分度横轴分开，证据不足的关键要求进入面试核验，而不是被直接判定为不具备。</desc>
+  <rect width="1200" height="675" fill="#fff"/>
+  <g font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif">
+    <text x="96" y="88" fill="#111" font-size="34" font-weight="700">没有证据，不等于不具备</text>
+    <text x="96" y="124" fill="#666" font-size="16">把岗位重要性与证据充分度分开，缺口用面试核验</text>
+    <line x1="96" y1="184" x2="1104" y2="184" stroke="#E8E8E8"/>
+    <line x1="278" y1="510" x2="970" y2="510" stroke="#222" stroke-width="1.5"/>
+    <path d="M962 504 L972 510 L962 516" fill="none" stroke="#222" stroke-width="1.5"/>
+    <line x1="278" y1="510" x2="278" y2="230" stroke="#222" stroke-width="1.5"/>
+    <path d="M272 238 L278 228 L284 238" fill="none" stroke="#222" stroke-width="1.5"/>
+    <line x1="624" y1="230" x2="624" y2="510" stroke="#E8E8E8" stroke-dasharray="6 8"/>
+    <line x1="278" y1="370" x2="970" y2="370" stroke="#E8E8E8" stroke-dasharray="6 8"/>
+    <text x="624" y="560" text-anchor="middle" fill="#666" font-size="15">证据充分度 →</text>
+    <text x="218" y="370" text-anchor="middle" fill="#666" font-size="15" transform="rotate(-90 218 370)">岗位重要性 →</text>
+    <text x="300" y="492" fill="#999" font-size="12">弱</text><text x="940" y="492" fill="#999" font-size="12">强</text>
+    <text x="294" y="250" fill="#999" font-size="12">高</text><text x="294" y="494" fill="#999" font-size="12">低</text>
+
+    <circle cx="810" cy="286" r="9" fill="#2F6BFF"/><text x="832" y="292" fill="#111" font-size="18" font-weight="600">必备且有证据</text>
+    <circle cx="792" cy="430" r="7" fill="#111"/><text x="814" y="436" fill="#111" font-size="16">优先且有证据</text>
+    <circle cx="458" cy="438" r="7" fill="#999"/><text x="480" y="444" fill="#666" font-size="16">尚未确认</text>
+    <circle cx="458" cy="288" r="34" fill="#fff" stroke="#2F6BFF" stroke-width="2"/>
+    <circle cx="458" cy="288" r="5" fill="#2F6BFF"/><text x="514" y="282" fill="#111" font-size="20" font-weight="700">面试核验</text><text x="514" y="310" fill="#666" font-size="14">关键要求，证据不足</text>
+    <path d="M478 314 C530 346 566 360 620 360" fill="none" stroke="#2F6BFF" stroke-width="1.5" stroke-dasharray="5 7"/>
+    <text x="96" y="606" fill="#999" font-size="13">系统只描述当前材料能支持到哪一步，不把信息缺失解释为能力缺失。</text>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {"core_message": "证据充分度与岗位重要性分开呈现，没有证据不等于不具备", "composition": "matrix-2d", "focus_node": "verify"},
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "must", "type": "point", "label": "必备且有证据", "importance": 4},
+    {"id": "preferred", "type": "point", "label": "优先且有证据", "importance": 3},
+    {"id": "verify", "type": "circle", "label": "面试核验", "importance": 5},
+    {"id": "unknown", "type": "point", "label": "尚未确认", "importance": 3},
+    {"id": "importance", "type": "line", "label": "岗位重要性", "importance": 2},
+    {"id": "strength", "type": "line", "label": "证据充分度", "importance": 2}
+  ],
+  "edges": [
+    {"from": "unknown", "to": "verify", "relation": "追问"},
+    {"from": "verify", "to": "must", "relation": "补证"},
+    {"from": "importance", "to": "must", "relation": "高"},
+    {"from": "strength", "to": "preferred", "relation": "强"}
+  ]
+}

@@ -8,7 +8,10 @@ from dotenv import load_dotenv
 
 # Global development mode flag. Preserved here because score.py and github.py
 # import it from this module.
-DEVELOPMENT_MODE = True
+# Candidate data must not be written to plaintext cache/CSV by default.
+# The legacy ``score.py`` pipeline can still be inspected with an explicit local
+# code change, but the supported Hiring Agent CN path is ``hiring-agent-cn``.
+DEVELOPMENT_MODE = False
 
 # Load .env before any os.getenv below, so values apply regardless of import order.
 load_dotenv(Path(__file__).parent / ".env")
