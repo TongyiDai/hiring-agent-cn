@@ -292,10 +292,10 @@ def test_none_format_omits_response_format():
 
 
 def test_auth_header_when_key_present():
-    p = OpenAICompatibleProvider("http://x/v1", api_key="sk-123")
+    p = OpenAICompatibleProvider("http://x/v1", api_key="test-key")
     with patch("requests.post", return_value=_fake_response()) as post:
         p.chat(model="m", messages=[])
-    assert post.call_args.kwargs["headers"]["Authorization"] == "Bearer sk-123"
+    assert post.call_args.kwargs["headers"]["Authorization"] == "Bearer test-key"
 
 
 def test_no_auth_header_when_keyless():

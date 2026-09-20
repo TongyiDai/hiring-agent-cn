@@ -1,0 +1,18 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {"core_message": "机器先给证据基线，人工逐条签核且保留完整变更记录", "composition": "axis-flow", "focus_node": "signoff"},
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "baseline", "type": "point", "label": "机器基线", "importance": 3},
+    {"id": "review", "type": "point", "label": "逐条复核", "importance": 4},
+    {"id": "note", "type": "point", "label": "填写依据", "importance": 3},
+    {"id": "signoff", "type": "circle", "label": "生成签核版", "importance": 5},
+    {"id": "audit", "type": "line", "label": "版本与审计", "importance": 3}
+  ],
+  "edges": [
+    {"from": "baseline", "to": "review", "relation": "查看"},
+    {"from": "review", "to": "note", "relation": "确认"},
+    {"from": "note", "to": "signoff", "relation": "签核"},
+    {"from": "signoff", "to": "audit", "relation": "留痕"}
+  ]
+}

@@ -1,69 +1,59 @@
-# Contributing Guidelines
+# Contributing
 
-Thanks for your interest in improving this project. Contributions are welcome, including documentation updates, bug reports, feature requests, and code changes.
+感谢你帮助改进 Hiring Agent CN。这个项目处理的是高风险招聘场景，正确性、隐私和可审计性优先于功能数量。
 
-## Reporting Bugs
+## 开始前
 
-1. Check that the bug has not already been reported: https://github.com/interviewstreet/hiring-agent/issues
-2. Open a new bug report: https://github.com/interviewstreet/hiring-agent/issues/new
-3. Please include:
-   - Clear description of the issue and expected behavior
-   - Environment info: OS, Python version, hiring-agent commit or version
-   - Steps to reproduce
-   - Relevant logs or stack traces
+1. 搜索现有 issue，避免重复工作。
+2. 对大改动先开 issue，说明问题、威胁模型和验收方式。
+3. 从 `main` 创建独立分支。
+4. 不要提交真实简历、候选人姓名、手机号、邮箱、身份证号、内部 JD、面试反馈、API Key 或访问令牌。
 
-> [!TIP]
-> If the bug involves PDF parsing or model output, attach a minimal PDF and the exact model you used.
+## 开发环境
 
-## Feature Requests
+```bash
+uv sync --extra dev --frozen
+uv run ruff check hiring_agent_cn tests
+uv run ruff format --check hiring_agent_cn tests
+uv run mypy hiring_agent_cn
+uv run pytest
+```
 
-1. Check for existing requests: https://github.com/interviewstreet/hiring-agent/issues
-2. Open a new feature request: https://github.com/interviewstreet/hiring-agent/issues/new
-3. Describe the problem, the proposed solution, and any alternatives you considered.
+OCR 是可选能力：
 
-## Contributing Code
+```bash
+uv sync --extra dev --extra ocr
+```
 
-1. Pick an issue from https://github.com/interviewstreet/hiring-agent/issues or open one first.
-2. Comment that you are working on it to avoid duplicate efforts.
-3. Fork the repo, then create a feature branch for your change.
+## 设计原则
 
-### Development
+- 候选人材料、岗位文本和外部平台内容均视为不可信输入。
+- 可疑内容必须在模型调用前隔离，不能只靠 system prompt。
+- 每条判断必须引用实际存在的 evidence ID。
+- 模型不能把确定性结果从“尚未确认”提升为“有直接证据”。
+- 没有证据只表示需要核验，不能解释为不具备。
+- 新功能不得引入自动录用、自动淘汰或批量拒绝。
+- 性别、年龄、婚育、民族、宗教、户籍、住址、健康等字段不得进入匹配。
+- 默认本地处理；新外部传输必须显式配置并写清楚数据边界。
 
-1. Fork and clone your fork.
-2. Create a fresh branch per change. Avoid pushing changes to the default branch of your fork.
-3. Set up the environment and run the pipeline locally to validate changes
-4. Run the CLI on a small sample to verify behavior:
+## 测试要求
 
-### Coding Style
+解析或安全修复必须附最小合成样本。优先用测试代码现场生成 PDF/DOCX，而不是提交二进制简历。安全测试至少说明：
 
-* Use [Black](https://black.readthedocs.io/en/stable/) for formatting.
-* Keep functions short and focused. Prefer pure helpers for prompt assembly and transformations.
+1. 攻击内容是什么；
+2. 哪一层应当拦截；
+3. 被隔离内容不会出现在 `safe_text`、证据引用和模型输入；
+4. 检测失败时系统如何安全降级。
 
-### Prompts and Providers
+涉及匹配逻辑时，应同时加入反例，防止把“材料未写”判成“候选人不会”。
 
-* Keep prompts declarative and provider agnostic.
-* Avoid model specific tokens or formatting that only one provider supports.
-* Changes to prompts should include short before and after examples in the pull request description.
+## 提交和 Pull Request
 
-### Tests and Smoke Checks
+- 使用清晰、祈使语气的提交标题。
+- PR 说明写清行为变化、测试证据、隐私影响和兼容性。
+- 修改模型提示词时，必须附脱敏的前后对比与确定性边界。
+- 修改依赖或外部 API 时，说明许可证、数据是否出境以及失败策略。
 
-* Validate changes with a couple of real resumes under different providers when possible:
+## 上游贡献
 
-  * One run with Ollama using the default local model.
-  * One run with Gemini if you have an API key.
-* Add or adjust small smoke tests that exercise each stage with minimal inputs:
-
-  * PDF to Markdown
-  * Section extraction to JSON Resume
-  * GitHub enrichment on a known username
-  * Evaluation to JSON with the required fields
-
-
-### Commit Messages
-
-* Use clear, imperative subjects, for example: `fix: handle en dash date ranges in work parser`.
-* Reference the issue number when applicable.
-
-## Code of Conduct
-
-Be respectful and collaborative. If you see unacceptable behavior, report it through an issue or contact the maintainers.
+如果修复同样适用于原始 [interviewstreet/hiring-agent](https://github.com/interviewstreet/hiring-agent)，欢迎将最小、通用的修复另行贡献给上游。本项目特有的中国大陆合规和产品边界可以保留在本 fork。
