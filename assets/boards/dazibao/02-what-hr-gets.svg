@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="960" viewBox="-20 -20 1720 1000" role="img" aria-labelledby="title desc">
+  <title id="title">每份简历，HR 最后拿到 4 样东西</title>
+  <desc id="desc">岗位要求、简历原文、待确认疑点和面试追问组成一份可复核的初审材料。</desc>
+  <rect x="0" y="0" width="1680" height="960" fill="#fdf0e0"/>
+  <g font-family="Noto Sans SC, PingFang SC, Microsoft YaHei, sans-serif">
+    <rect x="70" y="70" width="1540" height="190" fill="#375dfe" stroke="#1a2240" stroke-width="4"/>
+    <text x="840" y="160" text-anchor="middle" fill="#ffffff" font-size="66" font-weight="800">每份简历，HR 最后拿到 4 样东西</text>
+    <text x="840" y="218" text-anchor="middle" fill="#ffffff" font-size="28">不是一句“匹配”，而是一份可以继续工作的初审材料</text>
+    <rect x="70" y="300" width="750" height="250" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+    <text x="445" y="390" text-anchor="middle" fill="#1a2240" font-size="38" font-weight="800"><tspan fill="#375dfe">01</tspan><tspan dx="24">岗位要求</tspan></text>
+    <text x="445" y="458" text-anchor="middle" fill="#1a2240" font-size="28">把 JD 拆成一条条可核对的要求</text>
+    <text x="445" y="505" text-anchor="middle" fill="#1a2240" font-size="25">先确认岗位，再开始看人</text>
+    <rect x="860" y="300" width="750" height="250" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+    <text x="1235" y="390" text-anchor="middle" fill="#1a2240" font-size="38" font-weight="800"><tspan fill="#375dfe">02</tspan><tspan dx="24">简历原文</tspan></text>
+    <text x="1235" y="458" text-anchor="middle" fill="#1a2240" font-size="28">每条判断都能回到候选人的原话</text>
+    <text x="1235" y="505" text-anchor="middle" fill="#1a2240" font-size="25">不只给一个看不懂的分数</text>
+    <rect x="70" y="590" width="750" height="250" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+    <text x="445" y="680" text-anchor="middle" fill="#1a2240" font-size="38" font-weight="800"><tspan fill="#375dfe">03</tspan><tspan dx="24">待确认疑点</tspan></text>
+    <text x="445" y="748" text-anchor="middle" fill="#1a2240" font-size="28">没写清楚的地方，明确标出来</text>
+    <text x="445" y="795" text-anchor="middle" fill="#1a2240" font-size="25">“尚未确认”不等于“不具备”</text>
+    <rect x="860" y="590" width="750" height="250" fill="#375dfe" stroke="#1a2240" stroke-width="4"/>
+    <text x="1235" y="680" text-anchor="middle" fill="#ffffff" font-size="38" font-weight="800">04　面试追问</text>
+    <text x="1235" y="748" text-anchor="middle" fill="#ffffff" font-size="28">拿着问题去聊，不用现场临时想</text>
+    <text x="1235" y="795" text-anchor="middle" fill="#ffffff" font-size="25">问职责、规模、难点和结果</text>
+    <rect x="70" y="870" width="1540" height="60" fill="#fdf0e0" stroke="#2741c0" stroke-width="4"/>
+    <text x="840" y="911" text-anchor="middle" fill="#1a2240" font-size="24" font-weight="700">四样东西放在一起，面试官才知道“为什么问、该问什么”</text>
+  </g>
+</svg>

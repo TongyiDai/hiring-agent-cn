@@ -17,7 +17,7 @@ from .schemas import HumanReviewAction, ReviewReport
 
 app = FastAPI(
     title="Hiring Agent CN",
-    version="1.0.0",
+    version="1.0.1",
     description="面向人工复核的人岗证据审阅 API，不提供自动淘汰端点。",
 )
 

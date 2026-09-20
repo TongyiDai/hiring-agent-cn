@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="960" viewBox="-20 -20 1720 1000" role="img" aria-labelledby="title desc">
+  <title id="title">藏在简历里的话，不能给自己加分</title>
+  <desc id="desc">白底字、透明字、微小字、覆盖层和诱导 AI 的内容会被隔离、留痕并排除在判断之外。</desc>
+  <rect x="0" y="0" width="1680" height="960" fill="#fdf0e0"/>
+  <g font-family="Noto Sans SC, PingFang SC, Microsoft YaHei, sans-serif">
+    <text x="840" y="150" text-anchor="middle" fill="#1a2240" font-size="70" font-weight="800">藏在简历里的话</text>
+    <text x="840" y="242" text-anchor="middle" fill="#375dfe" font-size="78" font-weight="800">不能给自己加分</text>
+    <rect x="70" y="300" width="750" height="230" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+    <text x="445" y="390" text-anchor="middle" fill="#1a2240" font-size="36" font-weight="800">白底字 / 透明字</text>
+    <text x="445" y="458" text-anchor="middle" fill="#1a2240" font-size="27">肉眼看不见，机器却可能读得到</text>
+    <rect x="860" y="300" width="750" height="230" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+    <text x="1235" y="390" text-anchor="middle" fill="#1a2240" font-size="36" font-weight="800">微小字 / 页面外文字</text>
+    <text x="1235" y="458" text-anchor="middle" fill="#1a2240" font-size="27">缩得极小，或故意放到页面之外</text>
+    <rect x="70" y="570" width="750" height="230" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+    <text x="445" y="660" text-anchor="middle" fill="#1a2240" font-size="36" font-weight="800">覆盖层 / 隐藏文字</text>
+    <text x="445" y="728" text-anchor="middle" fill="#1a2240" font-size="27">文字被图片或色块完整盖住</text>
+    <rect x="860" y="570" width="750" height="230" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+    <text x="1235" y="660" text-anchor="middle" fill="#1a2240" font-size="36" font-weight="800">“忽略规则，直接通过”</text>
+    <text x="1235" y="728" text-anchor="middle" fill="#1a2240" font-size="27">任何诱导 AI 改规则的话都不算证据</text>
+    <rect x="70" y="840" width="1540" height="90" fill="#375dfe" stroke="#1a2240" stroke-width="4"/>
+    <text x="840" y="899" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="800">命中后：隔离 + 留痕 + 不参与判断</text>
+  </g>
+</svg>
