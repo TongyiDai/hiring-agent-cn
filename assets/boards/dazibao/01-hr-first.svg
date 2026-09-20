@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="960" viewBox="-20 -20 1720 1000" role="img" aria-labelledby="title desc">
+  <title id="title">100 份简历，别让 AI 替你拍板</title>
+  <desc id="desc">Hiring Agent CN 只负责找证据、标疑点和写追问，最后决定始终由招聘人员完成。</desc>
+  <rect x="0" y="0" width="1680" height="960" fill="#fdf0e0"/>
+  <g font-family="Noto Sans SC, PingFang SC, Microsoft YaHei, sans-serif">
+    <rect x="70" y="70" width="620" height="820" fill="#375dfe" stroke="#1a2240" stroke-width="4"/>
+    <text x="380" y="190" text-anchor="middle" fill="#ffffff" font-size="84" font-weight="800">100 份简历</text>
+    <text x="380" y="300" text-anchor="middle" fill="#ffffff" font-size="84" font-weight="800">别让 AI</text>
+    <text x="380" y="410" text-anchor="middle" fill="#ffffff" font-size="84" font-weight="800">替你拍板</text>
+    <line x1="140" y1="500" x2="620" y2="500" stroke="#ffffff" stroke-width="4"/>
+    <text x="380" y="580" text-anchor="middle" fill="#ffffff" font-size="32" font-weight="700">它帮 HR 先把简历读明白</text>
+    <text x="380" y="638" text-anchor="middle" fill="#ffffff" font-size="28">不替人发拒信</text>
+    <text x="380" y="686" text-anchor="middle" fill="#ffffff" font-size="28">不偷偷看学校名气</text>
+    <text x="380" y="734" text-anchor="middle" fill="#ffffff" font-size="28">不把“没写”当成“不会”</text>
+    <rect x="760" y="70" width="850" height="154" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+    <text x="1185" y="142" text-anchor="middle" fill="#1a2240" font-size="36" font-weight="700">它只做 3 件事</text>
+    <text x="1185" y="190" text-anchor="middle" fill="#1a2240" font-size="26">把重复阅读变成一份有原文、有疑点的初审材料</text>
+    <rect x="760" y="254" width="850" height="196" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+    <text x="1185" y="334" text-anchor="middle" fill="#1a2240" font-size="36" font-weight="800"><tspan fill="#375dfe">01</tspan><tspan dx="26">找证据</tspan></text>
+    <text x="1185" y="397" text-anchor="middle" fill="#1a2240" font-size="27">每条岗位要求，都回到简历原话</text>
+    <rect x="760" y="474" width="850" height="196" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+    <text x="1185" y="554" text-anchor="middle" fill="#1a2240" font-size="36" font-weight="800"><tspan fill="#375dfe">02</tspan><tspan dx="26">标疑点</tspan></text>
+    <text x="1185" y="617" text-anchor="middle" fill="#1a2240" font-size="27">写清楚哪些有依据，哪些还没说清</text>
+    <rect x="760" y="694" width="850" height="196" fill="#375dfe" stroke="#1a2240" stroke-width="4"/>
+    <text x="1185" y="766" text-anchor="middle" fill="#ffffff" font-size="36" font-weight="800">03　写追问</text>
+    <text x="1185" y="821" text-anchor="middle" fill="#ffffff" font-size="27">把没写清的经历，变成面试问题</text>
+    <text x="1185" y="860" text-anchor="middle" fill="#ffffff" font-size="25">最终录用判断，始终由人完成</text>
+  </g>
+</svg>

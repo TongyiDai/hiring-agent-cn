@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="960" viewBox="-20 -20 1720 1000" role="img" aria-labelledby="title desc">
+  <title id="title">HR 的操作，只有 3 步</title>
+  <desc id="desc">贴岗位要求、上传简历、查看证据报告，三步完成一份可继续面试的初审材料。</desc>
+  <rect x="0" y="0" width="1680" height="960" fill="#fdf0e0"/>
+  <g font-family="Noto Sans SC, PingFang SC, Microsoft YaHei, sans-serif">
+    <rect x="70" y="70" width="1540" height="190" fill="#375dfe" stroke="#1a2240" stroke-width="4"/>
+    <text x="840" y="160" text-anchor="middle" fill="#ffffff" font-size="72" font-weight="800">HR 的操作，只有 3 步</text>
+    <text x="840" y="218" text-anchor="middle" fill="#ffffff" font-size="28">第一次让技术同学安装；之后都在本地网页完成</text>
+    <rect x="70" y="310" width="486" height="470" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+    <text x="313" y="410" text-anchor="middle" fill="#375dfe" font-size="54" font-weight="800">01</text>
+    <text x="313" y="488" text-anchor="middle" fill="#1a2240" font-size="42" font-weight="800">贴岗位要求</text>
+    <line x1="136" y1="536" x2="490" y2="536" stroke="#1a2240" stroke-width="3"/>
+    <text x="313" y="606" text-anchor="middle" fill="#1a2240" font-size="28">先看有没有性别、年龄、</text>
+    <text x="313" y="652" text-anchor="middle" fill="#1a2240" font-size="28">婚育、户籍等风险条件</text>
+    <text x="313" y="724" text-anchor="middle" fill="#375dfe" font-size="25" font-weight="700">HR 确认后再继续</text>
+    <rect x="597" y="310" width="486" height="470" fill="#ffffff" stroke="#1a2240" stroke-width="4"/>
+    <text x="840" y="410" text-anchor="middle" fill="#375dfe" font-size="54" font-weight="800">02</text>
+    <text x="840" y="488" text-anchor="middle" fill="#1a2240" font-size="42" font-weight="800">上传简历</text>
+    <line x1="663" y1="536" x2="1017" y2="536" stroke="#1a2240" stroke-width="3"/>
+    <text x="840" y="606" text-anchor="middle" fill="#1a2240" font-size="28">支持 PDF、Word 和文本</text>
+    <text x="840" y="652" text-anchor="middle" fill="#1a2240" font-size="28">图片和扫描件可装 OCR</text>
+    <text x="840" y="724" text-anchor="middle" fill="#375dfe" font-size="25" font-weight="700">可疑隐藏文字先隔离</text>
+    <rect x="1124" y="310" width="486" height="470" fill="#375dfe" stroke="#1a2240" stroke-width="4"/>
+    <text x="1367" y="410" text-anchor="middle" fill="#ffffff" font-size="54" font-weight="800">03</text>
+    <text x="1367" y="488" text-anchor="middle" fill="#ffffff" font-size="42" font-weight="800">看证据报告</text>
+    <line x1="1190" y1="536" x2="1544" y2="536" stroke="#ffffff" stroke-width="3"/>
+    <text x="1367" y="606" text-anchor="middle" fill="#ffffff" font-size="28">先看有依据还是待确认</text>
+    <text x="1367" y="652" text-anchor="middle" fill="#ffffff" font-size="28">再拿面试问题去聊</text>
+    <text x="1367" y="724" text-anchor="middle" fill="#ffffff" font-size="25" font-weight="700">最终判断由人完成</text>
+    <rect x="70" y="830" width="1540" height="100" fill="#ffffff" stroke="#2741c0" stroke-width="4"/>
+    <text x="840" y="895" text-anchor="middle" fill="#1a2240" font-size="28" font-weight="800">输出：岗位要求 × 简历原文 × 待确认疑点 × 面试追问</text>
+  </g>
+</svg>
